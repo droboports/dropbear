@@ -28,5 +28,4 @@ Each invocation creates a log file with all the generated output.
 ## Sources
 
 * zlib: http://zlib.net/
-* openssl: http://www.openssl.org/
 * dropbear: https://matt.ucc.asn.au/dropbear/dropbear.html
