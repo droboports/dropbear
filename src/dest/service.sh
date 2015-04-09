@@ -29,8 +29,6 @@ start() {
 set -o errexit  # exit on uncaught error code
 set -o nounset  # exit on unset variable
 set -o pipefail # propagate last error code on pipe
-set -o xtrace   # enable script tracing
-
 # ensure log folder exists
 if [ ! -d "${tmp_dir}" ]; then mkdir -p "${tmp_dir}"; fi
 # redirect all output to logfile
@@ -39,5 +37,6 @@ STDOUT=">&3"
 STDERR=">&4"
 # log current date, time, and invocation parameters
 echo "$(date +"%Y-%m-%d %H-%M-%S"): ${0}" "${@}"
+set -o xtrace   # enable script tracing
 
 main "$@"
