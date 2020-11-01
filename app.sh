@@ -3,7 +3,7 @@ _build_zlib() {
 local VERSION="1.2.8"
 local FOLDER="zlib-${VERSION}"
 local FILE="${FOLDER}.tar.gz"
-local URL="http://zlib.net/${FILE}"
+local URL="http://zlib.net/fossils/${FILE}"
 
 _download_tgz "${FILE}" "${URL}" "${FOLDER}"
 pushd "target/${FOLDER}"
